@@ -32,12 +32,12 @@ export default class HomeTab extends Component {
   }
 
   makeRemoteRequest = () => {
-    fetch('http://18.221.82.1/app/api/card/card_all', {
+    fetch('url', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        'session_token': 'bavmr9BzE9lBRoqZaPrd',
+        'session_token': 'session-token',
       },
       body: JSON.stringify({
         user_id: 228
